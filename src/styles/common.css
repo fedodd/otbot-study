@@ -1,0 +1,10 @@
+@import './header.css';
+@import './header/menu.css';
+
+body {
+	margin: 0;
+}
+
+.holder {
+	margin: 0 20px;
+}

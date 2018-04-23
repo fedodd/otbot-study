@@ -1,0 +1,8 @@
+.DS_Store
+
+node_modules
+dist
+.postcss-sorting.json
+.sass-cache
+npm-debug.log
+layout_otbot
