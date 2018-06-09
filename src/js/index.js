@@ -1,1 +1,2 @@
-console.log('hello, world');
+import mytoggle from './scripts/toggle';
+import sidebarPopup from './scripts/sidebarPopup';

@@ -23,7 +23,7 @@ const htmlPlugins = generateHtmlPlugins('./src/html/views');
 module.exports = {
   entry: [
     './src/js/index.js',
-    './src/styles/common.css'
+    './src/styles/common.pcss'
   ],
   output: {
     filename: './js/bundle.js'
@@ -41,20 +41,36 @@ module.exports = {
       }
     },
     {
-      test: /\.css$/,
+      test: /\.pcss$/,
       use: ExtractTextPlugin.extract({
         fallback: 'style-loader',
         use: [
-          { loader: 'css-loader', options: { importLoaders: 1 } },
-          'postcss-loader'
+          {
+            loader: 'css-loader',
+            options: {importLoaders: 1},
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              config: {
+                path: __dirname + '/postcss.config.js'
+              }
+            },
+          },
         ]
       })
     },
-      /*       use: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: 'css-loader'
-      })
-    }, */
+    {
+      test: /\.(woff|woff2|eot|ttf|otf|png|svg|jpg)$/,
+      use: [{
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          publicPath: '..'
+        }
+      }
+      ]
+    },
     {
       test: /\.html$/,
       include: path.resolve(__dirname, 'src/html/includes'),
@@ -70,6 +86,10 @@ module.exports = {
     new CopyWebpackPlugin([{
       from: './src/fonts',
       to: './fonts'
+    },
+    {
+      from: './src/uploads',
+      to: './uploads'
     },
     {
       from: './src/img',

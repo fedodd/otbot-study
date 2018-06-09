@@ -1,0 +1,42 @@
+.nav,
+.subNav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.nav {
+	position: relative;
+	overflow: hidden;
+	width: 200px;
+	background-color: grey;
+}
+
+.nav-item {
+	position: relative;
+	overflow: hidden;
+}
+
+.nav-link {
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+.subNav {
+	position: absolute;
+	top: -100%;
+	z-index: -1;
+	background-color: lightgrey;
+}
+
+.is__active .subNav {
+	position: relative;
+	z-index: 0;
+	display: block;
+}

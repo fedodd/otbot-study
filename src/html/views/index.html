@@ -1,27 +1,17 @@
 <% var data = {
   title: "Портал по охране труда",
   author: "fedodd",
-  menu: require('./../includes/menu.html')
+  menu: require('./../includes/menu.html'),
+  studyHeader: require('./../includes/main/studyHeader.html'),
+  studyContent: require('./../includes/main/studyContent.html')
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<div class="holder">
-  <p>Первая страница.</p>
-  <p>
-    <img class="image" src="img/3CF983BD-0710-46AA-A209-6C5ED3FAE7DF.jpg">
-  </p>
-</div>
 <section class="content">
-	<aside class="sidebar">
-		<div class="sidebar-navBlock">
-			<ul class="sidebarNav">
-				<li class="sidebarNav-item">
-					<a href="#">Для офиса</a>
-				</li>
-			</ul>
-		</div>
-	</aside>
-	<main class="main"></main>
-</section> 
-<%= _.template(require('./../includes/sidebar.html'))(data) %>
+	<%= _.template(require('./../includes/sidebar.html'))(data) %>
+	<%= _.template(require('./../includes/main/main.html'))(data) %>
+
+</section>
+
+
 <%= _.template(require('./../includes/footer.html'))(data) %>

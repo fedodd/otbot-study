@@ -1,7 +1,7 @@
 {
-  "name": "bc-backend",
+  "name": "otbot-study",
   "version": "1.0.0",
-  "description": "",
+  "description": "study block of OTBOT system",
   "private": true,
   "scripts": {
     "dev": "webpack --mode development",
@@ -12,19 +12,16 @@
     "build-and-beautify": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
     "beautify": "html dist/*.html --indent-size 2"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fedodd/bc-backend.git"
-  },
+  "repository": "git+https://github.com/fedodd/otbot-study.git",
   "keywords": [],
-  "author": "",
+  "author": "fedodd",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fedodd/bc-backend/issues"
+    "url": "https://github.com/fedodd/otbot-study/issues"
   },
-  "homepage": "https://github.com/fedodd/bc-backend#readme",
+  "homepage": "https://github.com/fedodd/otbot-study#readme",
   "devDependencies": {
-    "autoprefixer": "^8.3.0",
+    "apply-loader": "^2.0.0",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
@@ -36,23 +33,31 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.11.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
     "html-cli": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.9.0",
     "postcss": "^6.0.21",
+    "postcss-conditionals": "^2.1.0",
     "postcss-cssnext": "^3.1.0",
-    "postcss-import": "^11.1.0",
+    "postcss-easy-import": "^3.0.0",
     "postcss-loader": "^2.1.4",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "pug": "^2.0.3",
     "pug-loader": "^2.4.0",
     "raw-loader": "^0.5.1",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
+    "stylelint-config-recommended": "^2.1.0",
     "sugarss": "^1.0.1",
-    "webpack": "^4.3.0",
-    "webpack-cli": "^2.0.13",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.3",
     "webpack-dev-server": "^3.1.3"
   },
   "dependencies": {
     "lodash": "^4.17.5"
-  }
+  },
+  "main": "package.json"
 }
