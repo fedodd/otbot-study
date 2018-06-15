@@ -1,17 +1,75 @@
-.studyHeader {
-
-}
-
 .studyNav {
-	display: flex;
-	justify-content: flex-start;
-	margin: 0px;
-	padding: 0px;
-	list-style: none;
-	
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  list-style: none;
 }
 
-.studyNav-item {
-	padding: 5px;
-	border: 2px solid darkgreen;
+.studyNav-title,
+.studyNav-title:before,
+.studyNav-title:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.studyNav-input {
+  display: none;
+}
+
+.studyNav-title {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  height: 100%;
+  border: 1px solid transparent;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+}
+
+.studyNav-title:before {
+  margin-right: 10px;
+  font-family: fontawesome;
+  font-weight: normal;
+}
+
+.studyNav-title:hover {
+  cursor: pointer;
+  color: #888;
+}
+
+.studyNav-input:checked + .studyNav-title {
+  border: 1px solid #ddd;
+  border-bottom: 2px solid orange;
+  color: #555;
+}
+
+#tab_OT:checked ~ #study_OT,
+#tab_PB:checked ~ #study_PB,
+#tab_EB:checked ~ #study_EB,
+#tab_GO:checked ~ #study_GO,
+#tab_PP:checked ~ #study_PP,
+#tab_prof:checked ~ #study_prof, {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .studyNav-title {
+    font-size: 0;
+  }
+  .studyNav-title:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .studyNav-title {
+    padding: 15px;
+  }
 }
