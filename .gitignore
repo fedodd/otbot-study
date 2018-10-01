@@ -1,8 +1,15 @@
-.DS_Store
-
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 node_modules
-dist
-.postcss-sorting.json
-.sass-cache
 npm-debug.log
-layout_otbot
+vendor
+
+.DS_Store
+Thumbs.db
+
+public
+
+.env
+
+plugins
+wp-content/plugins
