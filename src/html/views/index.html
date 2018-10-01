@@ -1,0 +1,22 @@
+<% var data = {
+  title: "Портал по охране труда",
+  author: "fedodd",
+  menu: require('./../includes/menu.html'),
+  studyHeader: require('./../includes/main/studyHeader.html'),
+  studyContent: require('./../includes/main/studyContent.html'),
+  studyOT: require('./../includes/main/studyOT.html'),
+  studyPB: require('./../includes/main/studyPB.html'),
+  studyEB: require('./../includes/main/studyEB.html'),
+  studyGO: require('./../includes/main/studyGO.html'),
+  studyPP: require('./../includes/main/studyPP.html'),
+  studyProf: require('./../includes/main/studyProf.html')
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<section class="content">
+	<%= _.template(require('./../includes/sidebar.html'))(data) %>
+	<%= _.template(require('./../includes/main/main.html'))(data) %>
+</section>
+
+
+<%= _.template(require('./../includes/footer.html'))(data) %>
