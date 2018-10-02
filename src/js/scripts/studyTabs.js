@@ -1,4 +1,4 @@
-const studyTabs = document.querySelectorAll('.studyNav-input');
+const studyTabs = document.querySelectorAll('.subNav-input');
 const studyContents = document.querySelectorAll('.studyContent-item');
 
 

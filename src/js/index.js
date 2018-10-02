@@ -1,4 +1,5 @@
 import mytoggle from './scripts/toggle';
-import sidebarPopup from './scripts/sidebarPopup';
+/* import sidebarPopup from './scripts/sidebarPopup';
+ */
 import studyTabs from './scripts/studyTabs';
-import OTChart from './scripts/OTChart';
+/* import OTChart from './scripts/OTChart'; */

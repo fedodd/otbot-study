@@ -1,4 +1,4 @@
-.studyNav {
+.subNav {
   display: flex;
   justify-content: flex-start;
   margin: 0px;
@@ -7,45 +7,45 @@
   list-style: none;
 }
 
-.studyNav-title,
-.studyNav-title:before,
-.studyNav-title:after {
+.subNav-title,
+.subNav-title:before,
+.subNav-title:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.studyNav-input {
+.subNav-input {
   display: none;
 }
 
-.studyNav-title {
+.subNav-title {
   display: flex;
   align-items: center;
-  padding: 15px 25px;
+  padding: 10px 20px;
   box-sizing: border-box;
   height: 100%;
   border: 1px solid transparent;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 2px solid $color-lightGrey;
   font-weight: 600;
   text-align: center;
   color: #bbb;
 }
 
-.studyNav-title:before {
+.subNav-title:before {
   margin-right: 10px;
   font-family: fontawesome;
   font-weight: normal;
 }
 
-.studyNav-title:hover {
+.subNav-title:hover {
   cursor: pointer;
   color: #888;
 }
 
-.studyNav-input:checked + .studyNav-title {
+.subNav-input:checked + .subNav-title {
   border: 1px solid #ddd;
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid $color-accent_alt;
   color: #555;
 }
 
@@ -59,17 +59,17 @@
 }
 
 @media screen and (max-width: 650px) {
-  .studyNav-title {
+  .subNav-title {
     font-size: 0;
   }
-  .studyNav-title:before {
+  .subNav-title:before {
     margin: 0;
     font-size: 18px;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .studyNav-title {
+  .subNav-title {
     padding: 15px;
   }
 }

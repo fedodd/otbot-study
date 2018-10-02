@@ -1,6 +1,26 @@
 <main class="main">
+	<%=subNav%>
+	<form class="signIn">
+		<h3 class="signIn-title">Авторизация</h3>
+		<p class="signIn-text">Пожалуйста, войдите в личный кабинет</p>
+		<div class="signIn-holder">
+			<label class="signIn-label">
+				ФИО полностью: <input type="text" class="signIn-input">
+			</label>
+			<label class="signIn-label">
+				Номер клуба: <input type="text" class="signIn-input">
+			</label>
+			<label class="signIn-label">
+				Пароль: <input type="text" class="signIn-input">
+			</label>
+		</div>
+		<button class="signIn-button button">
+			<span class="button-text">войти</span>
+		</button>
+	</form>
+	</div>
 	<div class="study">
-		<%=studyHeader%>
+		
 		<div class="studyContainer">
 			<%=studyOT%>
 		  <%=studyPB%>
