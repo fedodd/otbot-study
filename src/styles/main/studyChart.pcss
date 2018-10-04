@@ -1,9 +1,4 @@
-.studyList-wrapper {
-	display: flex;
-	align-items: center;
-}
-
-.studyList {
+.studyChart {
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -12,7 +7,7 @@
 	margin-left: 60px; /* double ::after width*/
 	padding: 0;
 
-	&::after {
+/* 	&::after {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -21,14 +16,14 @@
 		height: 100%;
     background: linear-gradient(to bottom, transparent 7.1%, $color-accent 7.1%, $color-accent 92.9%, transparent 92.9%);
 		content: '';
-	}
+	} */
 
 	&::before {
 		position: absolute;
     top: 50%;
     left: -60px; /* double ::after width*/
     display: inline-block;
-    width: 60px; /* double ::after width*/
+    width: 61px; /* double ::after width* + 1px artefact */
     height: 1px;
     background-color: #ffc200;
     content: '';
@@ -36,29 +31,56 @@
 }
 
 
-.studyList-title {
+.studyChart-title {	
+	align-self: center;
 	margin: 0;
 	padding: $padding-small;
+	box-sizing: border-box;
 	width: 40%;
 	border: 1px solid $color-accent;
 	text-align: center;	
 }
 
-.studyList-item {
+.studyChart-item {
 	position: relative;
 	display: inline-block;
 	margin: 5px 0 5px 30px; /* ::after width*/
-	padding: 5px;	
+	padding: 5px;
+	box-sizing: border-box;	
 	border: 1px solid $color-accent;
 
+	
 	&::after {
 		position: absolute;
     top: 50%;
     left: -30px; /*  ::after width*/
     display: inline-block;
+		box-sizing: inherit;
     width: 30px;
     height: 1px;
     background-color: #ffc200;
     content: "";
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: -30px; /*  ::after width*/
+    display: inline-block;
+		box-sizing: inherit;
+    width: 1px;
+    height: calc(100% + 12px); /*  double margin* + double border */
+    background-color: #ffc200;
+    content: "";
+	}
+
+	&:first-child::before {
+		top: 50%;
+		height: calc(50% + 12px); /*  double margin* + double border */
+	}
+
+	&:last-child::before {
+		bottom: 50%;
+		height: 50%; /*  double margin* + double border */
 	}
 }

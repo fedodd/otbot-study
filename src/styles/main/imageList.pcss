@@ -1,0 +1,51 @@
+.imageList {
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0;
+  margin: $padding-small 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+.imageList .imageList-title {
+  flex-grow: 1;
+  margin: 0 25%;
+  margin-bottom: $padding-small;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 50%;
+  border: $border;
+  border: 1px solid #ffc200;
+  font-size: 1em;
+  font-weight: bold;
+  font-weight: 700;
+}
+
+.imageList li {
+  flex-grow: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 150px;
+  text-align: center;
+}
+
+.is__small li {
+  padding: 5px;
+  width: 120px;
+  font-size: .75em;
+}
+
+
+
+.imageList-image {
+  width: 130px;
+  height: auto;
+
+  .is__small & {
+    width: 100px;
+  }
+}
