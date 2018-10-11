@@ -1,5 +1,4 @@
 .imageList {
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,27 +24,44 @@
   font-weight: 700;
 }
 
-.imageList li {
+.imageList-item {
   flex-grow: 0;
   padding: 10px;
   box-sizing: border-box;
   width: 150px;
   text-align: center;
-}
 
-.is__small li {
-  padding: 5px;
-  width: 120px;
-  font-size: .75em;
-}
+  .imageList.is__small & {
+    padding: 5px;
+    width: 120px;
+    font-size: .75em;
+  }
 
+  .imageList.is__special & {
+    padding: 0 $padding-small $padding-small;
+    min-width: 33%;
+  }
+}
 
 
 .imageList-image {
   width: 130px;
   height: auto;
 
-  .is__small & {
+  .imageList.is__small & {
     width: 100px;
+  }
+
+  .imageList.is__special & {
+    width: 90%;
+  }
+}
+
+.imageList-text {
+  .imageList.is__special & {
+    display: block;
+    margin-top: $padding-smaller;
+    padding: $padding-smaller;
+    border: $border;
   }
 }

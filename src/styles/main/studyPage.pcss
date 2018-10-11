@@ -16,16 +16,6 @@
 	margin: 60px 0;
 }
 
-.studyPage-imgPart { 
-	flex-shrink: 0;
-	width: 25%;
-	&.is__center {
-		margin: 0 auto;
-		width: 300px;
-		height: 400px;
-  }
-}
-
 .studyPage-textPart {
 	display: flex;
 	flex-direction: column;
@@ -37,6 +27,10 @@
 .studyPage-subtitle,
 .studyPage-description {
 	text-align: center;
+
+	&.is__accent {
+		color: $color-accent_alt;
+	}
 }
 
 .studyPage-textBlock.is__spec {
@@ -46,35 +40,14 @@
 	margin-bottom: $padding-small;
 }
 
-.studyPage-imgBox {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-.studyPage-list {
-	margin: 0;
-	margin-bottom: $padding-small;
-
-	& .is__accent {
-		color: $color-accent_alt;
-	}
-}
-
-.studyPage-list li.is__title {
-	margin: $padding-smaller 0;
-	list-style: none;
-	font-weight: bold;
-}
-
 .studyPage-text {
+	align-self: center;
 	& p {
 		text-indent: 1.5em;
 	}
 	
 	&.is__link {
+		align-self: auto;
 		color: $color-accent_alt;
 	}
 
