@@ -22,6 +22,7 @@
   font-size: 1em;
   font-weight: bold;
   font-weight: 700;
+  text-align: center;
 }
 
 .imageList-item {
@@ -41,6 +42,10 @@
     padding: 0 $padding-small $padding-small;
     min-width: 33%;
   }
+
+  &.is__big {
+    width: 220px;
+  }
 }
 
 
@@ -54,6 +59,10 @@
 
   .imageList.is__special & {
     width: 90%;
+  }
+
+  .imageList-item.is__big & {
+    width: 200px;
   }
 }
 
