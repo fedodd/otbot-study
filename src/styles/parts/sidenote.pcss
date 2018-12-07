@@ -1,0 +1,13 @@
+.sidenote {
+  display: flex;
+  margin-bottom: 24px; /* не кратно 9, но компенсируется неравность шрифта */
+  font-family: $font-family-sans;
+  font-size: $lead-font-size;
+  line-height: $lead-line-height;
+  background-color: rgba(0, 0, 255, .2);
+}
+
+.sidenote p {
+  margin-top: -$lead-top-compensator;
+  margin-bottom: -$lead-bottom-compensator;  
+}

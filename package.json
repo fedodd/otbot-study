@@ -1,5 +1,5 @@
 {
-  "name": "bc-backend",
+  "name": "otbot-study",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fedodd/bc-backend.git"
+    "url": "git+https://github.com/fedodd/otbot-study.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fedodd/bc-backend/issues"
+    "url": "https://github.com/fedodd/otbot-study/issues"
   },
-  "homepage": "https://github.com/fedodd/bc-backend#readme",
+  "homepage": "https://github.com/fedodd/otbot-study#readme",
   "devDependencies": {
     "apply-loader": "^2.0.0",
     "babel-core": "^6.26.0",
