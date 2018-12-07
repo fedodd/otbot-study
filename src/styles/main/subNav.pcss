@@ -4,7 +4,9 @@
   margin: 0px;
   padding: 0px;
   width: 100%;
+  height: 100%;
   list-style: none;
+  font-size: $medium-font-size;
 }
 
 .subNav-title,
@@ -25,11 +27,10 @@
   padding: 10px 15px;
   box-sizing: border-box;
   height: 100%;
-  border: 1px solid transparent;
-  border-bottom: 2px solid $color-lightGrey;
+  border-bottom: 3px solid transparent;
   font-weight: bold;
   text-align: center;
-  color: #bbb;
+  color: white;
 }
 
 .subNav-title:before {
@@ -40,13 +41,13 @@
 
 .subNav-title:hover {
   cursor: pointer;
-  color: #888;
+  border-bottom: 3px solid $color-accent;
+  color: $color-accent;
 }
 
 .subNav-input:checked + .subNav-title {
-  border: 1px solid #ddd;
-  border-bottom: 2px solid $color-accent_alt;
-  color: #555;
+  border-bottom: 3px solid $color-accent_alt;
+  color: $color-accent;
 }
 
 #tab_OT:checked ~ #study_OT,
