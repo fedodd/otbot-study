@@ -7,6 +7,7 @@ studyTabs[0].checked = true;
 
 /* переключатель */
 const toggleFunc = (studyContents, index) => {
+	document.documentElement.scrollTop = 0;
 	[...studyContents].map(
 		studyContent => studyContent.classList.remove('is__active'));
 	[...studyContents][index].classList.add('is__active');
