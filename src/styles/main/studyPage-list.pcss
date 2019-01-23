@@ -1,5 +1,10 @@
 .studyPage-list {
-	margin-bottom: $padding-small 0 $padding-medium;
+	margin: 0 0 $padding-small;
+	box-sizing: border-box;
+
+	@mixin respond-to mobile {
+		padding-left: 15px;
+	}
 
 	& .is__accent {
 		color: $color-accent_alt;
@@ -7,6 +12,10 @@
 
 	&.is__half {
 		width: 50%;
+
+		@mixin respond-to mobile {
+			width: 100%;
+		}
 	}
 }
 

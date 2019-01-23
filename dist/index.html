@@ -15,32 +15,62 @@
   <header class="header">
   	<menu class="menu">
   <nav class="subNav">
-		<li class="nav-item is__alt">
-			<a href="#" class="nav-link">
-				<img class="logo" src="../../img/logo_bb_org.png" alt="">
-			</a>
+		<li class="subNav-item is__alt">
+			<input type="radio" name="tabs" id="tab_start" class="subNav-input">
+			<label for="tab_start" class="subNav-title">
+				<img class="logo" src="./img/logo_bb_org.png" alt="">
+			</label>
 		</li>
 		<li class="subNav-item">
 			<input type="radio" name="tabs" id="tab_OT" class="subNav-input">
 			<label for="tab_OT" class="subNav-title">Охрана труда</label>
+			<label for="tab_OT" class="subNav-title is__mobile">ОТ</label>
 		</li>
 		<li class="subNav-item">
 			<input type="radio" name="tabs" id="tab_PB" class="subNav-input">
 			<label for="tab_PB" class="subNav-title">Пожарная безопасность</label>
+			<label for="tab_PB" class="subNav-title is__mobile">ПБ</label>
 		</li>
 		<li class="subNav-item">
 			<input type="radio" name="tabs" id="tab_EB" class="subNav-input">
 			<label for="tab_EB" class="subNav-title">Электро&shyбезопасность</label>
+			<label for="tab_EB" class="subNav-title is__mobile">ЭБ</label>
 		</li>
 		<li class="subNav-item">
 			<input type="radio" name="tabs" id="tab_GO" class="subNav-input">
 			<label for="tab_GO" class="subNav-title">Гражданская оборона</label>
+			<label for="tab_GO" class="subNav-title is__mobile">ГО</label>
 		</li>
 		<li class="subNav-item">
 			<input type="radio" name="tabs" id="tab_PP" class="subNav-input">
 			<label for="tab_PP" class="subNav-title">Первая помощь</label>
+			<label for="tab_PP" class="subNav-title is__mobile">ПП</label>
 		</li>
-  </nav>
+	</nav>
+
+
+<!-- 	<nav class="subNav is__mobile">
+		<li class="subNav-item is__alt">
+			<label for="tab_start" class="subNav-title">
+				<img class="logo" src="./img/logo_bb_org.png" alt="">
+			</label>
+		</li>
+		<li class="subNav-item">
+			<label for="tab_OT" class="subNav-title">ОТ</label>
+		</li>
+		<li class="subNav-item">
+			
+		</li>
+		<li class="subNav-item">
+  	
+		</li>
+		<li class="subNav-item">
+			
+		</li>
+		<li class="subNav-item">
+			
+		</li>
+	</nav> -->
 </menu>
 
   </header>
@@ -74,25 +104,56 @@
 	</form>
 	</div>
 	<div class="study">
-		
 		<div class="studyContainer">
+			<section id="study_start" class="studyContent-item">
+  <div class="studyPage">
+    <div class="studyPage-holder">
+      <h2 class="studyPage-subtitle">Привет! Пора пройти ежегодный инструктаж по безопасности труда!</h2>
+      <p class="studyPage-text">Новые инструкции короткие и понятные. Прочитайте и приходите в 207 кабинет расписаться в документах. Если вы в удаленном офисе - мы приедем самостоятельно. По всем вопросам, обращайтесь к нам:</p>
+      <div class="line-wrapper">
+        <div class="studyPage-textBlock is__spec">
+          <span>Специалист по охране труда Семенов Федор</span>
+          <span>моб. 8 (906)772-69-74</span>
+          <span>моб. 8 (916) 673-97-20</span>
+          <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
+          <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
+        </div>
+        <div class="studyPage-textBlock is__spec">
+          <span>Специалист по охране труда Рейтман Матвей</span>
+          <span>моб. 8 (926) 777-47-49</span>
+          <span>моб. 8 (916) 673-97-20</span>
+          <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
+          <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="studyPage is__last">
+    <div class="studyPage-holder">
+      <div class="arrows">
+        <label for="tab_OT" class="">Пройти инструктаж</label>
+      </div>
+    </div>
+  </div>
+</section>
+
 			<section id="study_OT" class="studyContent-item">
 	<div class="studyPage studyPage-first">
 		<div class="studyPage-holder">
 			<h1 class="studyPage-title">Охрана труда</h1>
-			<p class="studyPage-text"><strong></strong>Охрана труда</strong> — система сохранения жизни и здоровья работников во время работы.</p>
+			<p class="studyPage-text"><strong>Охрана труда</strong> — система сохранения жизни и здоровья работников во время работы.</p>
 	</div>
 	<div class="studyPage">
 		<div class="studyPage-holder">
 			<div class="line-wrapper">
 				<h3 class="studyChart-title">Мероприятия по охране труда</h3>
 				<ul class="studyChart">
-					<li class="studyChart-item">правовые</li>
-					<li class="studyChart-item">лечебно-профилактические</li>
-					<li class="studyChart-item">санитарно-гигиенические</li>
-					<li class="studyChart-item">социально-экономические</li>
-					<li class="studyChart-item">организационно-технические</li>
-					<li class="studyChart-item">реабилитационные</li>
+					<li class="studyChart-item">правовые - установить нормы безопасной работы и контролировать их соблюдение</li>
+					<li class="studyChart-item">лечебно-профилактические - проводить медосмотры</li>
+					<li class="studyChart-item">санитарно-гигиенические - предупредить профзаболевания</li>
+					<li class="studyChart-item">социально-экономические - стимулировать повышение уровня охраны труда</li>
+					<li class="studyChart-item">организационно-технические - организовать работу по охране труда, обучить работников</li>
+					<li class="studyChart-item">реабилитационные - переводить работников на легкий труд по медицинским показаниям</li>
 					<li class="studyChart-item">иные.</li>
 				</ul>
 			</div>
@@ -165,15 +226,14 @@
 				<li>Отрывайтесь от монитора 1 раз в час и посмотрите вдаль - дайте отдохнуть глазам;</li>
 				<li>Вставайте со стула несколько раз в день - непрерывное сидение на стуле приводит к болезням спины.</li>
 				<li>Проверяйте исправность компьютера перед началом работы;</li>
-				<li>Отрегулируйте стул так, чтобы сидеть ровно и при этом комфортно;</li>
-				<li>Установите монитор так, чтобы верх экрана был на уровне глаз;</li>
+				<li>Отрегулируйте кресло и монитор так, чтобы было удобно;</li>
 				<li>Освободите место для ног под столом;</li>
 				<li>Расположите вещи на рабочем столе так, чтобы дотягиваться не вставая;</li>
 				<li>Работайте в очках или линзах, если у вас плохое зрение;</li>
 				<li>Сообщите руководителю, если компьютер не исправен, не чините самостоятельно;</li>
 			</ul>
 			<div class="studyPage-imgPart is__center">
-				<div class="studyPage-imgBox " style="background-image: url('./../img/study/ot/11.jpg')">
+				<div class="studyPage-imgBox " style="background-image: url('./img/study/ot/11.jpg')">
 				</div>
 			</div>
 		</div>
@@ -193,13 +253,13 @@
 					<li>запрещено заходить в подсобные и технические помещения без производственной необходимости.</li>
 				</ul>
 				<div class="studyPage-imgPart">
-					<div class="studyPage-imgBox " style="background-image: url('./../img/study/hall-1.png')">
+					<div class="studyPage-imgBox " style="background-image: url('./img/study/hall-1.png')">
 					</div>
 				</div>
 			</div>
 			<div class="line-wrapper">
 				<div class="studyPage-imgPart">
-					<div class="studyPage-imgBox " style="background-image: url('./../img/study/wall-1.jpg')">
+					<div class="studyPage-imgBox " style="background-image: url('./img/study/wall-1.jpg')">
 					</div>
 				</div>
 				<ul class="studyPage-list">
@@ -237,7 +297,7 @@
 					<li>Работникам общественного питания запрещается находиться на кухне без санитарной одежды и головных уборов;</li>
 				</ul>
 				<div class="studyPage-imgPart">
-					<div class="studyPage-imgBox " style="background-image: url('./../img/study/ot/4.jpg')">
+					<div class="studyPage-imgBox " style="background-image: url('./img/study/ot/4.jpg')">
 					</div>
 				</div>
 			</div>
@@ -335,19 +395,19 @@
 			<h2 class="studyPage-subtitle">Знаки безопасности</h2>
 			<table class="table-signes">
 				<tr>
-					<th>Группа</th>
+					<th>Группа знаков</th>
 					<th>Геометрическая форма</th>
 					<th>Сигнальный цвет</th>
 					<th>Смысловое значение</th>
 				</tr>
 				<tr>
-					<td>Запрещающие знаки</td>
+					<td>Запрещающие</td>
 					<td class="is__centered"><img src="./img/study/signes/01.png" alt=""></td>
 					<td>Красный</td>
 					<td>Запрещение опасного поведения или действия</td>
 				</tr>
 				<tr>
-					<td>Предупреждающие знаки</td>
+					<td>Предупреждающие</td>
 					<td class="is__centered"><img src="./img/study/signes/02.png" alt=""></td>
 					<td>Желтый</td>
 					<td>Предупреждение о возможной опасности.
@@ -355,7 +415,7 @@
 					Внимание</td>
 				</tr>
 				<tr>
-					<td>Предписывающие знаки</td>
+					<td>Предписывающие</td>
 					<td class="is__centered"><img src="./img/study/signes/03.png" alt=""></td>
 					<td>Синий</td>
 					<td>Предписание обязательных действий во избежание опасности</td>
@@ -366,19 +426,18 @@
 						<div></div>
 					</td>
 					<td>Красный</td>
-					<td>Обозначение и указание мест нахождения средств противопожарной защиты, их элементов</td>
+					<td>Обозначение мест нахождения средств противопожарной защиты</td>
 				</tr>
 				<tr>
-					<td>Эвакуационные знаки и знаки медицинского и санитарного назначения</td>
+					<td>Эвакуационные и медицинского назначения</td>
 					<td class="is__colored is__green">
 						<div></div>
 					</td>
 					<td>Зеленый</td>
-					<td>Обозначение направления движения при эвакуации. Спасение, первая помощь при авариях или пожарах. Надпись, информация
-					для обеспечения безопасности</td>
+					<td>Направления движения при эвакуации. Спасение, первая помощь при авариях или пожарах.</td>
 				</tr>
 				<tr>
-					<td>Указательные знаки</td>
+					<td>Указательные</td>
 					<td class="is__colored is__blue">
 						<div></div>
 					</td>
@@ -389,8 +448,8 @@
 				</tr>
 			</table>
 			<p class="studyPage-text">* К знакам пожарной безопасности относят также некоторые запрещающие, предупреждающие и эвакуационные знаки.</p>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Запрещающие знаки</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Запрещающие знаки</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image059.png" alt="" class="imageList-image">
 					<p class="imageList-text">Запрещается курить</p>
@@ -484,8 +543,8 @@
 					<p class="imageList-text">Запрещается пользоваться лифтом для подъема (спуска) людей</p>
 				</li>
 			</ul>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Предупреждающие знаки</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Предупреждающие знаки</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image082.png" alt="" class="imageList-image">
 					<p class="imageList-text">Пожароопасно. Легковоспламеняющиеся вещества</p>
@@ -610,8 +669,8 @@
 					<p class="imageList-text">Осторожно. Сужение проезда (прохода)</p>
 				</li>
 			</ul>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Предписывающие знаки</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Предписывающие знаки</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image111.png" alt="" class="imageList-image">
 					<p class="imageList-text">Работать в защитных очках</p>
@@ -673,8 +732,8 @@
 					<p class="imageList-text">Курить здесь</p>
 				</li>
 			</ul>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Знаки пожарной безопасности</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Знаки пожарной безопасности</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image126.png" alt="" class="imageList-image">
 					<p class="imageList-text">Направляющая стрелка</p>
@@ -723,8 +782,8 @@
 					<p class="imageList-text">Звуковой оповещатель пожарной тревоги</p>
 				</li>
 			</ul>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Эвакуационные и знаки медицинского и санитарного назначения</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Эвакуационные и знаки медицинского и санитарного назначения</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image138.png" alt="" class="imageList-image">
 					<p class="imageList-text">Выход здесь</p>
@@ -782,8 +841,8 @@
 					<p class="imageList-text">Аптечка первой медицинской помощи</p>
 				</li>
 			</ul>
-			<ul class="imageList is__small">
-				<li class="imageList-title">Указательные знаки</li>
+			<ul class="imageList is__small is__toggle">
+				<li class="imageList-title is__toggle">Указательные знаки</li>
 				<li class="imageList-item">
 					<img src="./img/study/signes/image169.png" alt="" class="imageList-image">
 					<p class="imageList-text">Пункт (место) приема пищи</p>
@@ -800,21 +859,10 @@
 		</div>
 	</div>
 	<div class="studyPage is__last">
-		<h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж!<br>Если у Вас остались вопросы, мы готовы ответить на них.</h2>
-		<div class="line-wrapper">
-			<div class="studyPage-textBlock is__spec">
-				<span>Специалист по охране труда Семенов Федор</span>
-				<span>моб. 8 (906)772-69-74</span>
-				<span>моб. 8 (916) 673-97-20</span>
-				<span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
-				<a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
-			</div>
-			<div class="studyPage-textBlock is__spec">
-				<span>Специалист по охране труда Рейтман Матвей</span>
-				<span>моб. 8 (926) 777-47-49</span>
-				<span>моб. 8 (916) 673-97-20</span>
-				<span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
-				<a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+		<div class="studyPage-holder">
+			<h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж по охране труда.</h2>
+			<div class="arrows">
+				<label for="tab_PB" class="">Пройти следуюйщий инструктаж</label>
 			</div>
 		</div>
 	</div>
@@ -837,13 +885,13 @@
           <li>знать действия при эвакуации.</li>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/pb/1.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/pb/1.jpg')">
           </div>
         </div>
       </div>
       <div class="line-wrapper">
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/pb/2.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/pb/2.jpg')">
           </div>
         </div>
         <ul class="studyPage-list">
@@ -904,10 +952,10 @@
       <h2 class="studyPage-subtitle">Классификация огнетушителей</h2>
       <div class="line-wrapper">
         <div class="studyPage-imgPart is__left is__small">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/signes/image130.png')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/signes/image130.png')">
           </div>
         </div>
-        <h3 class="studyChart-title">По огнетушащему веществу (ОТВ) огнетушители подразделяют на следующие виды:</h3>
+        <h3 class="studyChart-title">По огнетушащему веществу (ОТВ) огнетушители подразделяют на виды:</h3>
         <ul class="studyChart">
           <li class="studyChart-item is__accent"><strong>порошковые (ОП)</strong></li>
           <li class="studyChart-item is__accent">газовые: <strong>углекислотные (ОУ)</strong>, хладоновые (ОХ)</li>
@@ -936,7 +984,6 @@
         <p class="studyPage-text">Принцип действия. Углекислый газ поступает к раструбу и из сжиженного состояния переходит в снегообразное и охлаждается до -70°С. Углекислота  охлаждает и изолирует горящее вещество от кислорода.</p>
         <div class="studyPage-imgPart">
           <img src="./img/study/pb/22.jpg" alt="" class="studyPage-imgBox">
-          </div>
         </div>
       </div>
       <div class="line-wrapper">
@@ -963,7 +1010,7 @@
       <h3 class="studyPage-subtitle is__subber is__accent">Со встроенным газовым источником давления</h3>
       <div class="line-wrapper">
         <div class="studyPage-imgPart is__big">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/pb/25.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/pb/25.jpg')">
           </div>
         </div>
         <p class="studyPage-text">Принцип действия. Газ поступает в нижнюю часть корпуса огнетушителя и создает избыточное давление вытесняет порошок в шланг к стволу. Порошок охлаждает и изолирует горящее вещество от кислорода . Нажимая на курок ствола, можно подавать порошок порциями.</p>
@@ -980,7 +1027,7 @@
       <div class="line-wrapper">
         <p class="studyPage-text">Принцип действия. порошок вытесняется газом в сопло. Порошок охлаждает и изолирует вещество от кислорода горящее . Можно подавать порциями.</p>
         <div class="studyPage-imgPart is__big">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/pb/25.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/pb/25.jpg')">
           </div>
         </div>
       </div>
@@ -1000,7 +1047,7 @@
       <ul class="imageList is__special">
         <li class="imageList-item">
           <img src="./img/study/pb/28.jpg" alt="" class="imageList-image">
-          <span class="imageList-text">Не беритесь голой рукой за раструб углекислотного огнетушителя, что не обморозить руку - температура опускается до -70°С</span>
+          <span class="imageList-text">Не беритесь голой рукой за раструб углекислотного огнетушителя, что не обморозить руку</span>
         </li>
         <li class="imageList-item">
           <img src="./img/study/pb/29.jpg" alt="" class="imageList-image">
@@ -1008,7 +1055,7 @@
         </li>
         <li class="imageList-item">
           <img src="./img/study/pb/30.jpg" alt="" class="imageList-image">
-          <span class="imageList-text">Тушите от основания пожара, углубляясь постепенно, по мере тушения</span>
+          <span class="imageList-text">Тушите от основания пожара</span>
         </li>
         <li class="imageList-item">
           <img src="./img/study/pb/31.jpg" alt="" class="imageList-image">
@@ -1032,68 +1079,58 @@
         </li>
         <li class="imageList-item">
           <img src="./img/study/pb/35.jpg" alt="" class="imageList-image">
-          <span class="imageList-text">При тушении электроустановок порошковым огнетушителем подавай заряд порциями через 3 -5 секунд.
-          Не подносить огнетушитель ближе 1 метра к горящей электроустановке</span>
+          <span class="imageList-text">При тушении электроустановок порошком подавай заряд порциями через 3-5 c.
+          Не подносить огнетушитель ближе 1 метра</span>
         </li>
       </ul>
     </div>
   </div>
   <div class="studyPage is__last">
-    <h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж!<br>Если у Вас остались вопросы, мы готовы ответить
-      на них.</h2>
-    <div class="line-wrapper">
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Семенов Федор</span>
-        <span>моб. 8 (906)772-69-74</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
-        <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
-      </div>
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Рейтман Матвей</span>
-        <span>моб. 8 (926) 777-47-49</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
-        <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+    <div class="studyPage-holder">
+      <h2 class="studyPage-subtitle">Поздравляем! Вы прошли противопожарный инструктаж.</h2>
+      <div class="arrows">
+        <label for="tab_EB" class="">Пройти следуюйщий инструктаж</label>
       </div>
     </div>
   </div>
 </section>
 		  <section id="study_EB" class="studyContent-item">
   <div class="studyPage">
-    <h1 class="studyPage-title">Электробезопасность</h1>
-    <p class="studyPage-description">Электрический ток - это скрытый вид опасности. Если коснуться токоведущих частей оборудования или оголенных проводов
-    под напряжением, можно получить электротравму. Результат элктротравмы колеблется от легкого испуга до остановки дыхания
-    и или сердцебиения. Электротравмы часто сопровождаются ожогами в местах входа выхода электрического тока.</p>
-    <div class="line-wrapper">
-      <div class="studyPage-imgPart">
-        <div class="studyPage-imgBox " style="background-image: url('./../img/study/ot/3.png')">
+    <div class="studyPage-holder">
+      <h1 class="studyPage-title">Электробезопасность</h1>
+      <p class="studyPage-text">Электрический ток - это скрытый вид опасности. Если коснуться токоведущих частей оборудования или оголенных проводов
+      под напряжением, можно получить электротравму. Результат элктротравмы колеблется от легкого испуга до остановки дыхания
+      и или сердцебиения. Электротравмы часто сопровождаются ожогами в местах входа выхода электрического тока.</p>
+      <div class="line-wrapper">
+        <div class="studyPage-imgPart">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/ot/3.png')">
+          </div>
         </div>
+        <ul class="studyPage-list">
+          <li class="is__title">Причины электротравматизма:</li>
+          <li>прикосновение к неизолированным токоведущим частям.</li>
+          <li>неисправное электрооборудование или электропроводка. В таких случаях напряжение тока может подаваться, например, на
+          корпус электроборудования, пол или стену помещения. Травмы по этой причине случаются часто, так как человек не ожидает
+          напряжения тока в таких условиях.</li>
+        </ul>
       </div>
-      <ul class="studyPage-list">
-        <li class="is__title">Причины электротравматизма:</li>
-        <li>прикосновение к неизолированным токоведущим частям.</li>
-        <li>неисправное электрооборудование или электропроводка. В таких случаях напряжение тока может подаваться, например, на
-        корпус электроборудования, пол или стену помещения. Травмы по этой причине случаются часто, так как человек не ожидает
-        напряжения тока в таких условиях.</li>
-      </ul>
-    </div>
-    <div class="line-wrapper">
-      
-      <ul class="studyPage-list">
-        <li class="is__title">Чтобы не получить электротравму, соблюдаем правила:</li>
-        <li>не прикасаться к неизолированным и не огражденным токоведущим частям электрооборудования и электропроводки;</li>
-        <li>не наступать на переносные электрические провода, лежащие на полу. Не снимать ограждения и защитные кожухи с
-        токоведущих частей оборудования, аппаратов и приборов, не открывать двери электрораспределительных шкафов (щитов), не
-        класть в них никаких предметов;</li>
-        <li>использовать в складских и офисных помещениях переносные электронагревательные приборы (электрочайники,
-        электрокипятильники, электроплитки и т.д.) запрещается;</li>
-        <li>не ремонтировать электрооборудование самостоятельно, не заменять лампы освещения и не протировать их. Эти работы
-        проводит только технический персонал;</li>
-        <li>сообщить руководителю, если обнаружили нарушения изоляции электропроводок, неисправность электроборудования;</li>
-      </ul>
-      <div class="studyPage-imgPart">
-        <div class="studyPage-imgBox " style="background-image: url('./../img/study/ot/14.jpg')">
+      <div class="line-wrapper">
+        
+        <ul class="studyPage-list">
+          <li class="is__title">Чтобы не получить электротравму, соблюдаем правила:</li>
+          <li>не прикасаться к неизолированным и не огражденным токоведущим частям электрооборудования и электропроводки;</li>
+          <li>не наступать на переносные электрические провода, лежащие на полу. Не снимать ограждения и защитные кожухи с
+          токоведущих частей оборудования, аппаратов и приборов, не открывать двери электрораспределительных шкафов (щитов), не
+          класть в них никаких предметов;</li>
+          <li>использовать в складских и офисных помещениях переносные электронагревательные приборы (электрочайники,
+          электрокипятильники, электроплитки и т.д.) запрещается;</li>
+          <li>не ремонтировать электрооборудование самостоятельно, не заменять лампы освещения и не протировать их. Эти работы
+          проводит только технический персонал;</li>
+          <li>сообщить руководителю, если обнаружили нарушения изоляции электропроводок, неисправность электроборудования;</li>
+        </ul>
+        <div class="studyPage-imgPart">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/ot/14.jpg')">
+          </div>
         </div>
       </div>
     </div>
@@ -1107,7 +1144,7 @@
       <p class="studyPage-text"><strong>При попадании в область действия шагового напряжения необходимо выходить из опасной зоны.</strong></p>
       <div class="line-wrapper">
         <div class="studyPage-imgPart is__left">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/ot/10.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/ot/10.jpg')">
           </div>
         </div>
         <div class="">
@@ -1141,22 +1178,10 @@
     </div>
   </div>
   <div class="studyPage is__last">
-    <h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж!<br>Если у Вас остались вопросы, мы готовы ответить
-      на них.</h2>
-    <div class="line-wrapper">
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Семенов Федор</span>
-        <span>моб. 8 (906)772-69-74</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
-        <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
-      </div>
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Рейтман Матвей</span>
-        <span>моб. 8 (926) 777-47-49</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
-        <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+    <div class="studyPage-holder">
+      <h2 class="studyPage-subtitle">Поздравляем! Вам присвоена I группа по электробезопасности.</h2>
+      <div class="arrows">
+        <label for="tab_GO" class="">Пройти следуюйщий инструктаж</label>
       </div>
     </div>
   </div>
@@ -1179,7 +1204,7 @@
           катастрофического затопления.</li>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/1.PNG')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/1.PNG')">
           </div>
         </div>
       </div>
@@ -1207,13 +1232,13 @@
           ЗС.</ol>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/2.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/2.jpg')">
           </div>
         </div>
       </div>
       <div class="line-wrapper">
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/3.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/3.jpg')">
           </div>
         </div>
         <ul class="studyPage-list">
@@ -1240,13 +1265,13 @@
           обслуживанию ЗС.</ol>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/4.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/4.jpg')">
           </div>
         </div>
       </div>
       <div class="line-wrapper">
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/5.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/5.jpg')">
           </div>
         </div>
         <ul class="studyPage-list">
@@ -1264,7 +1289,7 @@
           <ol>Быть в готовности к возможному повторению сигналов оповещения ГО.</ol>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/6.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/6.jpg')">
           </div>
         </div>
       </div>
@@ -1366,7 +1391,7 @@
           <li>Сделать полный выдох, открыть глаза и возобновить дыхание</li>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/23.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/23.jpg')">
           </div>
         </div>
       </div>
@@ -1395,17 +1420,17 @@
           <li class="is__accent">Все, ватно-марлевая повязка готова !</li>
         </ul>
         <div class="studyPage-imgPart">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/24.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/24.jpg')">
           </div>
         </div>
       </div>
       <div class="line-wrapper">
         <div class="studyPage-imgPart is__big">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/25.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/25.jpg')">
           </div>
         </div>
         <div class="studyPage-imgPart is__big">
-          <div class="studyPage-imgBox " style="background-image: url('./../img/study/go/26.jpg')">
+          <div class="studyPage-imgBox " style="background-image: url('./img/study/go/26.jpg')">
           </div>
         </div>
       </div>
@@ -1416,22 +1441,10 @@
     </div>
   </div>
   <div class="studyPage is__last">
-    <h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж!<br>Если у Вас остались вопросы, мы готовы ответить
-      на них.</h2>
-    <div class="line-wrapper">
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Семенов Федор</span>
-        <span>моб. 8 (906)772-69-74</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
-        <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
-      </div>
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Рейтман Матвей</span>
-        <span>моб. 8 (926) 777-47-49</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
-        <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+    <div class="studyPage-holder">
+      <h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж по гражданской обороне.</h2>
+      <div class="arrows">
+        <label for="tab_PP" class="">Пройти следуюйщий инструктаж</label>
       </div>
     </div>
   </div>
@@ -1444,45 +1457,48 @@
       <h1 class="studyPage-title">Оказание первой помощи пострадавшим</h1>
       <p class="studyPage-description">Изучите алгоритмы оказания первой помощи по схемам. Если хотите узнать больше - посмотрите видео.</p>
       <img src="./img/study/pp/1.jpg" class="studyPage-imgPart is__fullWidth"/>
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/WBnm2BpVhgU" frameborder="0" allow="autoplay; encrypted-media"
-        allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/WBnm2BpVhgU" frameborder="0" allow="autoplay; encrypted-media"
+        allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/2.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/pHcbLqaHdd0" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/pHcbLqaHdd0" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/3.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/mlTh4Mqubwc" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/mlTh4Mqubwc" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/4.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/EgTa89hjBlA" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/EgTa89hjBlA" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/5.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/Ui4FFAKh8f4" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/Ui4FFAKh8f4" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/6.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/8j6cml5c2o0" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/8j6cml5c2o0" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
       <img src="./img/study/pp/7.jpg" class="studyPage-imgPart is__fullWidth" />
-      <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/RVZ40eDlq60" frameborder="0" allow="autoplay; encrypted-media"
-          allowfullscreen></iframe></div>
+<!--       <div class="studyPage-video"><iframe src="https://www.youtube.com/embed/RVZ40eDlq60" frameborder="0" allow="autoplay; encrypted-media"
+          allowfullscreen></iframe></div> -->
     </div>
   </div>
   <div class="studyPage is__last">
-    <h2 class="studyPage-subtitle">Поздравляем! Вы прошли инструктаж!<br>Если у Вас остались вопросы, мы готовы ответить
-      на них.</h2>
-    <div class="line-wrapper">
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Семенов Федор</span>
-        <span>моб. 8 (906)772-69-74</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
-        <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
-      </div>
-      <div class="studyPage-textBlock is__spec">
-        <span>Специалист по охране труда Рейтман Матвей</span>
-        <span>моб. 8 (926) 777-47-49</span>
-        <span>моб. 8 (916) 673-97-20</span>
-        <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
-        <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+    <div class="studyPage-holder">
+      <h2 class="studyPage-subtitle">Поздравляем! Вы прошли все инструктажи.</h2>
+      <p class="studyPage-text">Приходите в 207 кабинет расписаться в документах у специалистов по охране труда.
+        Если вы в удаленном офисе - мы приедем самостоятельно. По всем вопросам, обращайтесь к нам:</p>
+      <div class="line-wrapper">
+        <div class="studyPage-textBlock is__spec">
+          <span>Специалист по охране труда Семенов Федор</span>
+          <span>моб. 8 (906)772-69-74</span>
+          <span>моб. 8 (916) 673-97-20</span>
+          <span>раб.тел. 8 (495) 984-3440 доб. 12103</span>
+          <a href="mailto:fm_semenov@bingo-boom.com" class="studyPage-text is__link">fm_semenov@bingo-boom.com</a>
+        </div>
+        <div class="studyPage-textBlock is__spec">
+          <span>Специалист по охране труда Рейтман Матвей</span>
+          <span>моб. 8 (926) 777-47-49</span>
+          <span>моб. 8 (916) 673-97-20</span>
+          <span>раб.тел. 8 (495) 984-3440 доб. 12110</span>
+          <a href="mailto:ma_reytman@bingo-boom.com" class="studyPage-text is__link">ma_reytman@bingo-boom.com</a>
+        </div>
       </div>
     </div>
   </div>

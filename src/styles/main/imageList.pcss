@@ -8,6 +8,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  word-break: break-word;
 }
 
 .imageList .imageList-title {
@@ -18,9 +19,14 @@
   box-sizing: border-box;
   width: 50%;
   border: $border;
-  border: 1px solid #ffc200;
+  border: 1px solid $color-accent;
   font-weight: bold;
   text-align: center;
+  
+  &.is__toggle:hover {
+    cursor: pointer;
+    background-color: $color-accent;
+  }
 }
 
 .imageList-item {
@@ -30,15 +36,39 @@
   width: 150px;
   text-align: center;
 
+  @mixin respond-to mobile {
+    width: 100px;
+  }
+
+  .is__toggle & {
+    display: none;  
+  }
+  
+  .is__toggle.is__active & {
+      display: block;
+  }
+
   .imageList.is__small & {
     padding: 5px;
     width: 120px;
     font-size: .75em;
+
+    @mixin respond-to mobile {
+      width: 100px;
+    }
   }
 
   .imageList.is__special & {
     padding: 0 $padding-small $padding-small;
     min-width: 33%;
+
+    @mixin respond-to mobile {
+      min-width: 50%;
+
+      &:last-child:nth-child(odd) {
+        width: 100%;
+      }
+    }
   }
 
   &.is__big {
@@ -51,8 +81,16 @@
   width: 130px;
   height: auto;
 
+  @mixin respond-to mobile {
+    width: 80px;
+  }
+
   .imageList.is__small & {
     width: 100px;
+
+    @mixin respond-to mobile {
+      width: 80px;
+    }
   }
 
   .imageList.is__special & {
@@ -65,10 +103,15 @@
 }
 
 .imageList-text {
+
   .imageList.is__special & {
     display: block;
     margin-top: $padding-smaller;
     padding: $padding-smaller;
     border: $border;
+   
+    @mixin respond-to mobile {
+      padding: 2px;
+    }
   }
 }
