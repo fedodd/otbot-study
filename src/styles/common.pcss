@@ -1,10 +1,15 @@
 @import './vendors/*';
+@import './tech/*';
 @import './*/*';
 @import '*';
 
 body {
 	margin: 0;
 	font: $font;
+
+	@mixin respond-to mobile {
+		font-size: 16px;
+	}
 }
 
 .holder {
@@ -18,9 +23,14 @@ body {
 }
 
 .line-wrapper {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	margin: $padding-small 0;
+
+	@mixin respond-to mobile {
+		flex-direction: column;
+	}
 }
 
 .content {
@@ -31,4 +41,16 @@ body {
 		color: white;
 		background-color: $color-black;
 	}
+}
+
+*:hover {
+	transition: $time;
+}
+
+*::after {
+	transition: $time;
+}
+
+* {
+	box-sizing: border-box;
 }

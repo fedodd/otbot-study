@@ -10,6 +10,10 @@
 	flex-shrink: 0;
 	width: 25%;
 
+	@mixin respond-to mobile {
+		width: 100%;
+	}
+
 	&.is__center {
 		margin: 0 auto;
 		width: 300px;
@@ -27,12 +31,22 @@
 	&.is__big {
     width: 25vw;
 		height: 25vw;
+
+		@mixin respond-to mobile {
+			width: 90vw;
+			height: 90vw;
+		}
 	}
 
 	&.is__height {
 		margin: $padding-small;
 		width: 50%;
 		height: auto;
+
+		@mixin respond-to mobile {
+			margin: $padding-smaller 0;
+			width: 100%;
+		}
 
 		&.is__center {
 			margin: $padding-small auto;

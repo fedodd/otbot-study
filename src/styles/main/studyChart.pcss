@@ -7,6 +7,11 @@
 	margin-left: 60px; /* double ::after width*/
 	padding: 0;
 
+	@mixin respond-to mobile {
+		
+		word-break: break-word;
+	}
+
 /* 	&::after {
 		position: absolute;
 		top: 0;
@@ -31,14 +36,36 @@
 }
 
 
-.studyChart-title {	
+.studyChart-title {
+	display: block;	
 	align-self: center;
 	margin: 0;
 	padding: $padding-small;
 	box-sizing: border-box;
 	width: 40%;
 	border: 1px solid $color-accent;
-	text-align: center;	
+	text-align: center;
+
+	@mixin respond-to mobile {
+    display: flex;
+		justify-content: center;
+    align-items: center;
+		margin-bottom: $padding-smaller;
+		padding: 0;
+		width: 100%;
+		min-height: 80px;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0px;
+			display: inline-block;
+			width: 1px;
+			height: calc(50% + 45px);  /* половина хедера с маржином */
+			background-color: #ffc200;
+			content: "";
+		}
+	}
 }
 
 .studyChart-item {

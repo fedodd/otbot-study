@@ -1,0 +1,35 @@
+.arrows {
+  overflow: hidden;
+  margin-top: $padding-small;
+  padding-right: 20px;
+  text-align: right;
+  
+  & label {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: $color-accent;
+    
+    &:hover {
+      cursor: pointer;
+      background-color: $color-accent_alt2;
+
+      &::after {
+        border-left: 20px solid $color-accent_alt2;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      right: -50px;
+      display: block;
+      box-sizing: border-box;
+      border: 30px solid transparent;
+      border-left: 20px solid $color-accent;
+      content: "";
+      transform: translateY(-50%);
+    }
+  }
+}

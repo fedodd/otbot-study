@@ -16,7 +16,7 @@ function generateHtmlPlugins(templateDir) {
       inject: false
     });
   });
-}
+};
 
 const htmlPlugins = generateHtmlPlugins('./src/html/views');
 
