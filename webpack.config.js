@@ -74,14 +74,6 @@ module.exports = {
       allChunks: true
     }),
     new CopyWebpackPlugin([{
-      from: './src/fonts',
-      to: './fonts'
-    },
-    {
-      from: './src/uploads',
-      to: './uploads'
-    },
-    {
       from: './src/img',
       to: './img'
     }
